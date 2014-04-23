@@ -44,12 +44,8 @@ bing_verify:
 timezone:    Asia/Chongqing
 future:      true
 pygments:    true
-#markdown:    kramdown
-markdown: pandoc
-pandoc:
-  format: html5
-  extensions: [smart, mathjax]
-  
+markdown:    redcarpet
+
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title/
 
