@@ -4,6 +4,22 @@
 		<li><a href="{{ site.url }}">Home</a></li>
 		<li><a href="{{ site.url }}/posts/">Posts</a></li>
 		<li><a href="{{ site.url }}/tags/">Tags</a></li>
-		<li><a href="{{ site.url }}/about/">About</a></li>
+		<li>
+			<a href="#">About</a>
+			<ul class="dl-submenu">
+				<li>
+					<h4>{{ site.owner.name }}</h4>
+					<p>{{ site.owner.bio }}</p>
+				</li>
+
+				{% if site.owner.email %}<li>
+					<a href="mailto:{{ site.owner.email }}"><i class="icon-envelope"></i> Email</a>
+				</li>{% endif %}
+		
+				{% if site.owner.github %}<li>
+					<a href="http://github.com/{{ site.owner.github }}"><i class="icon-github"></i> GitHub</a>
+				</li>{% endif %}
+			</ul><!-- /.dl-submenu -->
+		</li>
 	</ul><!-- /.dl-menu -->
 </nav><!-- /.dl-menuwrapper -->
