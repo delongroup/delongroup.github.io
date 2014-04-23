@@ -1,7 +1,6 @@
 require "rubygems"
 require "bundler/setup"
 require "stringex"
-require 'hz2py'
 
 ## -- Config -- ##
 
@@ -23,9 +22,7 @@ task :new_post, :title do |t, args|
   else
     title = get_stdin("Enter a title for your post: ")
   end
-  slug = Hz2py.do(title.encode('utf-8'), :join_with => '-', :to_simplified => true)
-  slug = slug.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
-  filename = "#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{slug.to_url}.#{new_post_ext}"
+  filename = "#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.#{new_post_ext}"
   if File.exist?(filename)
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
@@ -55,9 +52,7 @@ task :new_page, :title do |t, args|
   else
     title = get_stdin("Enter a title for your page: ")
   end
-  slug = Hz2py.do(title.encode('utf-8'), :join_with => '-', :to_simplified => true)
-  slug = slug.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
-  filename = "#{slug.to_url}.#{new_page_ext}"
+  filename = "#{title.to_url}.#{new_page_ext}"
   if File.exist?(filename)
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
