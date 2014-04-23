@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hello Word
+title: 你好
 description: "Demo 页面"
 tags: [Demo]
 ---
