@@ -16,7 +16,7 @@ tags: [Showdown]
 2. 新建立Demo.html。  
     添加`showdown`库  
     
-	```javascript
+	```html
 	
 	<script type="text/javascript" src="src/showdown.js"></script>
 	
@@ -24,7 +24,7 @@ tags: [Showdown]
 	 
 	添加`Prettify`库和样式  
 	
-	```css
+	```html
 	
 	<link href="prettify/prettify.css" type="text/css" rel="stylesheet" />
 	<script type="text/javascript" src="prettify/prettify.js"></script>
@@ -33,7 +33,7 @@ tags: [Showdown]
 	
 	代码块背景和边框  
 	
-	```javascript
+	```html
 	<style type="text/css">
 	pre{background-color: #f7f7f9;border:1px solid #e1e1e8;word-break: break-word;}
 	</style>
@@ -41,7 +41,7 @@ tags: [Showdown]
 	
     初始化代码
     
-	```javascript
+	```html
 	<script type="text/javascript">
 	var converter;
 	window.onload = function()
@@ -61,7 +61,7 @@ tags: [Showdown]
 	
 	 `Markdown`转`Html`
 	 
-	 ```javascript
+	 ```html
 	 
 	 <script type="text/javascript">
 	function onConvert()
@@ -79,7 +79,7 @@ tags: [Showdown]
 ##其他
 1. 添加行号
 
- 	 ```javascript
+ 	 ```html
   	<pre class="prettyprint linenums"></pre>
   	```
 2. 显示所用行号
