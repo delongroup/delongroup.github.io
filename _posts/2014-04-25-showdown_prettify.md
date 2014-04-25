@@ -86,7 +86,5 @@ tags: [Showdown]
 
    修改`prettify.css`文件，改`list-style-type: none`为`list-style-type: decimal`
    
-   
-   
-##例子代码
-[showdown.zip](/assets/zip/showdown.zip)
+3. 例子代码  
+   [showdown.zip](/assets/zip/showdown.zip)
