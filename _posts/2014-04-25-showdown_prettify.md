@@ -18,7 +18,7 @@ tags: [Showdown]
     
 	```html
 	
-	<script type="text/javascript" src="src/showdown.js"></script>
+	 <script type="text/javascript" src="src/showdown.js"></script>
 	
 	``` 
 	 
@@ -42,10 +42,10 @@ tags: [Showdown]
     初始化代码
     
 	```html
-	<script type="text/javascript">
-	var converter;
-	window.onload = function()
-	{
+	 <script type="text/javascript">
+	 var converter;
+	 window.onload = function()
+	 {
 		/**
 		* Showdown对象
 		*/
@@ -55,8 +55,8 @@ tags: [Showdown]
 		* 高亮代码
 		*/
 		prettyPrint();
-	};
-	</script>
+	 };
+	 </script>
 	```
 	
 	 `Markdown`转`Html`
@@ -64,15 +64,15 @@ tags: [Showdown]
 	 ```html
 	 
 	 <script type="text/javascript">
-	function onConvert()
-	{
+	 function onConvert()
+	 {
 		var code = document.getElementById('in');
 		var v =  converter.makeHtml(code.value);
 		var out = document.getElementById('out');
 		out.innerHTML = v;
 		prettyPrint();
-	}
-	</script>
+	 }
+	 </script>
 	
 	 ```  
 
@@ -80,8 +80,8 @@ tags: [Showdown]
 1. 添加行号
 
  	 ```html
-  	<pre class="prettyprint linenums"></pre>
-  	```
+  	 <pre class="prettyprint linenums"></pre>
+  	 ```
 2. 显示所用行号
 
    修改`prettify.css`中`list-style-type: none`为`list-style-type: decimal`
