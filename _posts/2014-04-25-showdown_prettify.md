@@ -14,64 +14,66 @@ tags: [Showdown]
 ##配置
 1. 解压Showdown和Prettify，把Prettify放入Showdown文件夹中。
 2. 新建立Demo.html。  
-    添加`showdown`库  
-    
-	```yaml
-	
-	<script type="text/javascript" src="src/showdown.js"></script>
-	
-	```  
-	添加`Prettify`库和样式  
-	
-	```javascript
-	<link href="prettify/prettify.css" type="text/css" rel="stylesheet" />
-	<script type="text/javascript" src="prettify/prettify.js"></script>
-	```
-	
-	代码块背景和边框  
-	
-	```javascript
-	<style type="text/css">
-	pre{background-color: #f7f7f9;border:1px solid #e1e1e8;word-break: break-word;}
-	</style>
-	```
-	
-    初始化代码
-    
-	```javascript
-	<script type="text/javascript">
-	var converter;
-	window.onload = function()
-	{
-		/**
-		* Showdown对象
-		*/
-		converter = new Showdown.converter();
-	
-		/**
-		* 高亮代码
-		*/
-		prettyPrint();
-	};
-	</script>
-	```
-	
-	 `Markdown`转`Html`
-	 
-	 ```javascript
-	 
-	 <script type="text/javascript">
-	function onConvert()
-	{
-		var code = document.getElementById('in');
-		var v =  converter.makeHtml(code.value);
-		var out = document.getElementById('out');
-		out.innerHTML = v;
-		prettyPrint();
-	}
-	</script>
-	
-	 ```  
+
+
+添加`showdown`库  
+
+```javascript
+
+<script type="text/javascript" src="src/showdown.js"></script>
+
+```  
+添加`Prettify`库和样式  
+
+```javascript
+<link href="prettify/prettify.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="prettify/prettify.js"></script>
+```
+
+代码块背景和边框  
+
+```javascript
+<style type="text/css">
+pre{background-color: #f7f7f9;border:1px solid #e1e1e8;word-break: break-word;}
+</style>
+```
+
+初始化代码
+
+```javascript
+<script type="text/javascript">
+var converter;
+window.onload = function()
+{
+/**
+* Showdown对象
+*/
+converter = new Showdown.converter();
+
+/**
+* 高亮代码
+*/
+prettyPrint();
+};
+</script>
+```
+
+`Markdown`转`Html`
+
+```javascript
+
+<script type="text/javascript">
+function onConvert()
+{
+var code = document.getElementById('in');
+var v =  converter.makeHtml(code.value);
+var out = document.getElementById('out');
+out.innerHTML = v;
+prettyPrint();
+}
+</script>
+
+```  
 
 ##其他
 1. 添加行号
