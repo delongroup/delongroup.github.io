@@ -84,4 +84,4 @@ tags: [Showdown]
   	 ```
 2. 显示所用行号
 
-   修改`prettify.css`中`list-style-type: none`为`list-style-type: decimal`
+   修改`prettify.css`文件，改`list-style-type: none`为`list-style-type: decimal`
