@@ -2,7 +2,7 @@
 layout: post
 title: Showdown + Prettify 配置
 description: Showdown + Prettify 配置
-tags: [Showdown][Prettify]
+tags: [Showdown]
 ---
 [Showdown](https://github.com/coreyti/showdown)是处理markdown的javascript库,支持markdown的扩展，比如GitHub的[GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown)。  
 [Prettify](https://code.google.com/p/google-code-prettify/)是Google的代码高亮javascript库,支持多种语言和模版。  
