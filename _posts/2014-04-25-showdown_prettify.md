@@ -16,7 +16,7 @@ tags: [Showdown]
 2. 新建立Demo.html。  
     添加`showdown`库  
     
-	```yaml
+	```javascript
 	
 	<script type="text/javascript" src="src/showdown.js"></script>
 	
