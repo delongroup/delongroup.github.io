@@ -24,7 +24,7 @@ tags: [Showdown]
 	 
 	添加`Prettify`库和样式  
 	
-	```javascript
+	```css
 	
 	<link href="prettify/prettify.css" type="text/css" rel="stylesheet" />
 	<script type="text/javascript" src="prettify/prettify.js"></script>
