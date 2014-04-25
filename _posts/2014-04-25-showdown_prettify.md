@@ -20,12 +20,15 @@ tags: [Showdown]
 	
 	<script type="text/javascript" src="src/showdown.js"></script>
 	
-	```  
+	``` 
+	 
 	添加`Prettify`库和样式  
 	
 	```javascript
+	
 	<link href="prettify/prettify.css" type="text/css" rel="stylesheet" />
 	<script type="text/javascript" src="prettify/prettify.js"></script>
+	
 	```
 	
 	代码块背景和边框  
