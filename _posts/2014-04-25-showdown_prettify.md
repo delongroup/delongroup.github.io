@@ -17,7 +17,9 @@ tags: [Showdown]
     添加`showdown`库  
     
 	```javascript
+	
 	<script type="text/javascript" src="src/showdown.js"></script>
+	
 	```  
 	添加`Prettify`库和样式  
 	
@@ -57,6 +59,7 @@ tags: [Showdown]
 	 `Markdown`转`Html`
 	 
 	 ```javascript
+	 
 	 <script type="text/javascript">
 	function onConvert()
 	{
@@ -67,6 +70,7 @@ tags: [Showdown]
 		prettyPrint();
 	}
 	</script>
+	
 	 ```  
 
 ##其他
