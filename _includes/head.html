@@ -68,12 +68,7 @@
 {% endif %}
 <script type="text/javascript">
   $(function(){
-    $("pre").addClass("prettyprint linenums");
+    $("pre").addClass("prettyprint");
     prettyPrint();
-    $('.entry a').each(function(){
-      if($(this).attr("href").indexOf("heiniuhaha") == -1){
-        $(this).attr("target", "_blank");
-      }
-    })
   });
 </script>
