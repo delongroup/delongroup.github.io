@@ -28,6 +28,13 @@
 <link href="{{ site.url }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
 {% if site.owner.google_plus %}<link rel="author" href="{{ site.owner.google_plus }}?rel=author">{% endif %}
 
+<link rel="stylesheet" href="{{ site.url }}/assets/highlightjs/styles/default.css">
+<script src="{{ site.url }}/assets/highlightjs/highlight.pack.js"></script>
+<script type="text/javascript">
+  hljs.configure({classPrefix: ''});
+  hljs.initHighlightingOnLoad();
+</script>
+
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -42,9 +49,6 @@
 
 <!-- Load Modernizr -->
 <script src="{{ site.url }}/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
-<script src="{{ site.url }}/assets/prettify/prettify.js"></script>
-<script src="{{ site.url }}/assets/prettify/run_prettify.js"></script>
-<link rel="stylesheet" href="{{ site.url }}/assets/prettify/prettify.css">
 <!-- Icons -->
 <!-- 16x16 -->
 <link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
