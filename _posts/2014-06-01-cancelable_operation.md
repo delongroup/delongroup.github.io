@@ -64,11 +64,11 @@ typedef void (^TaskCompletionBlock)(BOOL finished, NSError *error);
 
 TaskOperation *operation = [taskManager executeWithCompletion:^(BOOL finished, NSError *error) {
         NSLog(@"finished");
-    }];
+}];
     
-    operation.progressBlock = ^(NSString *title, CGFloat progress, NSDictionary *params){
+operation.progressBlock = ^(NSString *title, CGFloat progress, NSDictionary *params){
         NSLog(@"%@",title);
         //[operation cancel];
-    };
+};
 
 ```
