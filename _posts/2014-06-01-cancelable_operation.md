@@ -41,7 +41,8 @@ typedef void (^TaskCompletionBlock)(BOOL finished, NSError *error);
 ##任务管理
 
 ```objc
-　
+
+
 　/**
  *  任务管理
  */
