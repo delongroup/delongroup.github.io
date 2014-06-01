@@ -238,3 +238,34 @@ typedef void (^TaskCancelBlock)();
 @end
 
 ```
+- TaskManager.m
+
+```objc
+#import "TaskManager.h"
+#import "TaskOperationExecutor.h"
+
+@implementation TaskManager
+
+- (TaskOperation *)executeWithCompletion:(TaskCompletionBlock)completion
+{
+    TaskOperationExecutor *executor = [[TaskOperationExecutor alloc] init];
+    executor.completion = completion;
+    [executor executeTask:^(TaskOperationExecutor *executor) {
+        NSInteger l = 0;
+        while (l++ < 10 && executor.running)
+        {
+            [NSThread sleepForTimeInterval:1];
+            [executor invokeProgressBlock:[NSString stringWithFormat:@"%d",l,nil] progress:0 params:nil];
+        }
+    } withCancel:^{
+        
+    }];
+    
+    [executor release];
+
+    return executor;
+}
+
+@end
+
+```
