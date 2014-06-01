@@ -55,5 +55,5 @@ typedef void (^TaskCompletionBlock)(BOOL finished, NSError *error);
  */
 - (TaskOperation *)executeWithCompletion:(TaskCompletionBlock)completion;
 @end
-　
+
 ```
