@@ -57,3 +57,18 @@ typedef void (^TaskCompletionBlock)(BOOL finished, NSError *error);
 @end
 
 ```
+
+##使用
+
+```objc
+
+TaskOperation *operation = [taskManager executeWithCompletion:^(BOOL finished, NSError *error) {
+        NSLog(@"finished");
+    }];
+    
+    operation.progressBlock = ^(NSString *title, CGFloat progress, NSDictionary *params){
+        NSLog(@"%@",title);
+        //[operation cancel];
+    };
+
+```
