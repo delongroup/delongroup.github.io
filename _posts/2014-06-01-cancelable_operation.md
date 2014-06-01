@@ -42,8 +42,7 @@ typedef void (^TaskCompletionBlock)(BOOL finished, NSError *error);
 
 ```objc
 
-
-　/**
+/**
  *  任务管理
  */
 @interface TaskManager : NSObject
@@ -56,6 +55,5 @@ typedef void (^TaskCompletionBlock)(BOOL finished, NSError *error);
  */
 - (TaskOperation *)executeWithCompletion:(TaskCompletionBlock)completion;
 @end
-
 　
 ```
